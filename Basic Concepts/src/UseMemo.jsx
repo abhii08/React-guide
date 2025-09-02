@@ -7,18 +7,15 @@ const UseMemo = () => {
     const handleInput = (e) => {
         setInput(e.target.value)
     };
-     const result  = useMemo(function slowFunction() {
-        let sum=0;
-        for(let i=0; i<=10000; i++){
-            sum+=i; 
-        }
-        console.log("Hello from slow function");
-        return sum;
+    const result  = useMemo(function slowFunction() {
+      let sum=0;
+      for(let i=0; i<=10000; i++){
+          sum+=i; 
+      }
+      console.log("Hello from slow function");
+      return sum;
     },[count,input])
     
-   
-    
-
   return (
     <div>
         <h1>{count}</h1>

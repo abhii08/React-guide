@@ -6,7 +6,7 @@ import App from './App.jsx'
 import Form from './Form.jsx'
 import Fetch from './Fetch.jsx'
 import MultipleReturns from './MultipleReturns.jsx'
-import Memo from './Memo.jsx'
+import Memo from './Memo/Memo.jsx'
 import UseMemo from './UseMemo.jsx'
 import A from "../src/ContextAPI/A.jsx"
 import UseReducer from './UseReducer.jsx'
@@ -20,8 +20,9 @@ import Axios from './Axios.jsx'
 import AxiosPost from './AxiosPost.jsx'
 import Pagination from './Pagination.jsx'
 
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Pagination />
+    <App />
   </StrictMode>
 )
